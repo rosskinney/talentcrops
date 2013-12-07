@@ -1,3 +1,5 @@
 <h3>User</h3>
-<p>User: <%= @user.name %></p>
-<p>Email: <%= @user.email if @user.email %></p>
+<p>Profile Name: <%= @user.name %></p>
+<p>Email: <%= @user.email %></p>
+<p>About me: <%= @user.about_me if @user.about_me %></p>
+<p>Description of me: <%= @user.description if @user.about_me %></p>

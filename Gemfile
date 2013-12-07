@@ -11,7 +11,7 @@ gem 'cancan'
 gem 'devise'
 gem 'figaro'
 gem 'foundation-rails'
-gem 'pg'
+gem 'sqlite3'
 gem 'rolify'
 gem 'simple_form'
 group :development do
