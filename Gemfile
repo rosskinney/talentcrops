@@ -27,7 +27,7 @@ group :development do
   gem 'rb-inotify', :require=>false
 end
 group :development, :test do
-  gem "sqlite3", "~> 1.3.8"
+  #gem "sqlite3", "~> 1.3.8"
   gem 'factory_girl_rails'
   gem 'rspec-rails'
   gem 'thin'
