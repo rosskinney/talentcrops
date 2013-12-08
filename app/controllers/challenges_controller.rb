@@ -4,7 +4,8 @@ class ChallengesController < ApplicationController
   # GET /challenges
   # GET /challenges.json
   def index
-    @challenges = Challenge.all
+    @user = User.find(params[:user_id]) if params[:user_id]
+    @challenges = @user ? @user.challenges.all : Challenge.all
   end
 
   # GET /challenges/1
