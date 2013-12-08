@@ -2,7 +2,10 @@ class Challenge < ActiveRecord::Base
 	# has_many :posts
 	# has_many :users, through :posts
 	belongs_to :user
-	belongs_to :post
+	has_many :posts, through :challenge_posts
+	
+	
+	# belongs_to :post
 	# has_many :votes, through :posts
 	# has_many :users, through :votes
 
