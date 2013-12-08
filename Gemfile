@@ -11,10 +11,10 @@ gem 'cancan'
 gem 'devise'
 gem 'figaro'
 gem 'foundation-rails'
-gem 'sqlite3'
 gem 'rolify'
 gem 'simple_form'
 group :development do
+  gem 'sqlite3'
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
   gem 'guard-bundler'
@@ -33,9 +33,12 @@ group :development, :test do
 end
 group :production do
   gem 'unicorn'
+  gem 'pg'
+  gem 'rails_12factor'
 end
 group :test do
   gem 'capybara'
   gem 'database_cleaner', '1.0.1'
   gem 'email_spec'
 end
+
