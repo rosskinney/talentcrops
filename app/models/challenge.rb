@@ -3,7 +3,7 @@ class Challenge < ActiveRecord::Base
 	has_many :users, through: :posts
 	has_many :posts, through: :challenge_posts
 
-	validates :title, :description, :category, :end_date, presence: true
+	validates :post_id, :title, :description, :category, :end_date, presence: true
 
 	
 	# # has_many :votes, through :posts

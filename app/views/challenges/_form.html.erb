@@ -3,12 +3,12 @@
 
   <div class="form-inputs">
     <!-- needs to create user id -->
-    <%= f.input :post_id %> 
+    <%= f.hidden_field :post_id, :value => @post.id %> 
 
     <%= f.input :title %>
     <%= f.input :description %>
     <%= f.input :category %>
-    <%= f.input :subcategory %>
+    <%#= f.input :subcategory %>
     <%= f.input :end_date %>
   </div>
 
