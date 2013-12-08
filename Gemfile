@@ -16,7 +16,6 @@ gem 'foundation-rails'
 gem 'pg'
 gem 'rolify'
 gem 'simple_form'
-gem 'pg'
 group :development do
  
   gem 'better_errors'
