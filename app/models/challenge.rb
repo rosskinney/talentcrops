@@ -1,11 +1,9 @@
 class Challenge < ActiveRecord::Base
 	belongs_to :user
-	has_many :users, through :posts
-	has_many :posts, through :challenge_posts
+	has_many :users, through: :posts
+	has_many :posts, through: :challenge_posts
 
 	validates :title, :description, :category, :end_date, presence: true
-
-
 
 	
 	# # has_many :votes, through :posts
