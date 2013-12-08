@@ -13,6 +13,7 @@ gem 'figaro'
 gem 'foundation-rails'
 gem 'rolify'
 gem 'simple_form'
+gem 'pg'
 group :development do
  
   gem 'better_errors'
@@ -27,7 +28,7 @@ group :development do
   gem 'rb-inotify', :require=>false
 end
 group :development, :test do
-  gem "sqlite3", "~> 1.3.8"
+  
   gem 'factory_girl_rails'
   gem 'rspec-rails'
   gem 'thin'
