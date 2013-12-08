@@ -1,16 +1,18 @@
-<h3 class="home_title text-center">We are TalentCrops</h3>
-<br>
-<h3 class="home_subtitle text-center">A competitive based social site built on sharing and creating challenges to the world.</h3>
-<% if user_signed_in? %>
-	<% @users.each do |user| %>
-  	<p>User: <%=link_to user.name, user %></p>
-  <% end %>
-<% else %>
-	<ul>
-		<li><%= link_to 'Join us and compete against your friends', new_user_registration_path %></li>
-		<br>
-		<li>Already have an account?</li>
-		<li><%= link_to 'Login', new_user_session_path %></li>
-	</ul>
-<% end %>
-
+<% @body_class = "homepage" %>
+<div class="welcome">
+	<h3 class="home_title text-center">TalentCrops</h3>
+	<br>
+	<h3 class="home_subtitle text-center">The contest based social network.</h3>
+	<% if user_signed_in? %>
+		<% @users.each do |user| %>
+	  	<p>User: <%=link_to user.name, user %></p>
+	  <% end %>
+	<% else %>
+		<ul>
+			<li><%= link_to 'Join us and compete against your friends', new_user_registration_path %></li>
+			<br>
+			<li>Already have an account?</li>
+			<li><%= link_to 'Login', new_user_session_path %></li>
+		</ul>
+	<% end %>
+</div>

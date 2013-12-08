@@ -17,7 +17,7 @@ gem 'pg'
 gem 'rolify'
 gem 'simple_form'
 group :development do
- 
+  gem 'pry'
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
   gem 'guard-bundler'

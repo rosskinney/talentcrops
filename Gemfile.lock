@@ -246,6 +246,7 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   pg
+  pry
   rails (= 4.0.2)
   rails_12factor
   rails_layout
