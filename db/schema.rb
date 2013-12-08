@@ -11,7 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131207230407) do
+ActiveRecord::Schema.define(version: 20131208023833) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "challenges", force: true do |t|
+    t.integer  "post_id"
+    t.string   "title"
+    t.text     "description"
+    t.string   "category"
+    t.string   "subcategory"
+    t.datetime "end_date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "votes"
+    t.integer  "post_challenge_id"
+    t.boolean  "state"
+  end
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"

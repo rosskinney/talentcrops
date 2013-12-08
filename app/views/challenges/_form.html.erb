@@ -1,13 +1,13 @@
-<%= simple_form_for(@post) do |f| %>
+<%= simple_form_for(@challenge) do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
+    <%= f.input :post_id %>
     <%= f.input :title %>
     <%= f.input :description %>
     <%= f.input :category %>
-    <%#= f.input :sub_category %>
-    <%= f.input :picture_url %>
-    <%#= f.input :user_id %>
+    <%= f.input :subcategory %>
+    <%= f.input :end_date %>
   </div>
 
   <div class="form-actions">
